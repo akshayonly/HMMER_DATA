@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Load the CSV data
-data = pd.read_csv("/Users/akshayonly/Complexone/Webapp/HMMER_DATA/data.csv")
+data = pd.read_csv("https://media.githubusercontent.com/media/akshayonly/HMMER_DATA/main/data.csv")
 
 # Title of the web app
 st.title('NuoHMMER Data Viewer')
