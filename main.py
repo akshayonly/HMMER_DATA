@@ -7,6 +7,17 @@ data = pd.read_csv("https://media.githubusercontent.com/media/akshayonly/HMMER_D
 # Title of the web app
 st.title('NuoHMMER Data Viewer')
 
+# Description of the app
+st.markdown("""
+The filtered data, shown below, is derived from the results of HMMER search result.
+
+- **Option 1:** Enter an **Accession** to filter the data by Accession alone.
+- **Option 2:** Enable the checkbox to filter by both **Accession** and **Subunit**.
+- Use the dropdown menu to select the desired **Subunit** from the available options.
+
+The filtered data will be displayed below. You can explore the dataset without downloading it.
+""")
+
 # User input: Accession
 accession = st.text_input('Enter Accession:', placeholder='U00096.3')
 
